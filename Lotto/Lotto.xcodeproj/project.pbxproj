@@ -21,6 +21,7 @@
 		F13CBBCA2822CC1F0056D81B /* StringAdditionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13CBBC92822CC1F0056D81B /* StringAdditionError.swift */; };
 		F13CBBCB2822D1D80056D81B /* StringAdditionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13CBBC92822CC1F0056D81B /* StringAdditionError.swift */; };
 		F142C4812822DA61001F1CAD /* StringAdditionPrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13CBBC72822CBD50056D81B /* StringAdditionPrinter.swift */; };
+		F142C48928264B5C001F1CAD /* LottoMachineInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142C48828264B5C001F1CAD /* LottoMachineInputView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +48,8 @@
 		F13CBBC32822C9030056D81B /* StringAdditionValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringAdditionValidator.swift; sourceTree = "<group>"; };
 		F13CBBC72822CBD50056D81B /* StringAdditionPrinter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringAdditionPrinter.swift; sourceTree = "<group>"; };
 		F13CBBC92822CC1F0056D81B /* StringAdditionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringAdditionError.swift; sourceTree = "<group>"; };
+		F142C48828264B5C001F1CAD /* LottoMachineInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoMachineInputView.swift; sourceTree = "<group>"; };
+		F142C48B28264BAE001F1CAD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				C7905FC527311CC6004C3FCC /* main.swift */,
+				F142C48A28264B88001F1CAD /* LottoMachine */,
 				F142C4822822E64B001F1CAD /* StirngAdditionCaculator */,
 			);
 			path = Lotto;
@@ -114,6 +118,15 @@
 				F13CBBC92822CC1F0056D81B /* StringAdditionError.swift */,
 			);
 			path = StirngAdditionCaculator;
+			sourceTree = "<group>";
+		};
+		F142C48A28264B88001F1CAD /* LottoMachine */ = {
+			isa = PBXGroup;
+			children = (
+				F142C48B28264BAE001F1CAD /* README.md */,
+				F142C48828264B5C001F1CAD /* LottoMachineInputView.swift */,
+			);
+			path = LottoMachine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +221,7 @@
 				C7905FC627311CC6004C3FCC /* main.swift in Sources */,
 				F13CBBCA2822CC1F0056D81B /* StringAdditionError.swift in Sources */,
 				F13CBBC42822C9030056D81B /* StringAdditionValidator.swift in Sources */,
+				F142C48928264B5C001F1CAD /* LottoMachineInputView.swift in Sources */,
 				F13CBBC22822C8E80056D81B /* StringAdditionConverter.swift in Sources */,
 				F13CBBBB2822C7FA0056D81B /* StringAddtionCaculator.swift in Sources */,
 				F13CBBC82822CBD50056D81B /* StringAdditionPrinter.swift in Sources */,
