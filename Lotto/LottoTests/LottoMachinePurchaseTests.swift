@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import Lotto
 
 class LottoMachinePurchaseTests: XCTestCase {
 
@@ -19,6 +20,13 @@ class LottoMachinePurchaseTests: XCTestCase {
 
     
     func test_given로또번호_when숫자인지체크_then숫자아니라면_에러() {
+        
+        //given
+        let input = "만원"
+        let lottoMachine = LottoMachinePurchaseView()
+        
+        
+        //when && given
         
         
     }
