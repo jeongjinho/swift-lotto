@@ -8,8 +8,13 @@
 import Foundation
 
 
-struct LottoMachineInputView {
-    
-    
-    
+struct LottoMachinePurchaseView {
+//
+//
+//
+//
+//    func purchaseAmount(_ amount: Int) {
+//
+//    }
+//
 }
