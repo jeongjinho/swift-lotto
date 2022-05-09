@@ -7,22 +7,24 @@
 
 import Foundation
 
-
 struct LottoMachinePurchaseViewMock {
-
+    private let lottoGenerator: LottoNumberGenerator = LottoNumberGenerator()
     var input: String? = ""
    
-    
     init(input: String) {
         self.input = input
     }
     
     @discardableResult
-    mutating func purchaseLotto() throws -> Int {
+    mutating func purchaseLotto() throws -> Lotto {
         guard let input = input, let amount = Int(input) else { throw PurchaseError.notNumber }
         guard amount % 1000 == 0 else { throw PurchaseError.remainer }
-        printPurchasedLotto(of: amount / 1000)
-        return amount / 1000
+        let gameCount = amount / 1000
+        printPurchasedLotto(of: gameCount)
+        let lotto = lottoGenerator.generateLotto(of: gameCount)
+        printLotto(lotto)
+        return lotto
+      
     }
     
     var printPurchasedLottoCallCount: Int = 0
@@ -31,7 +33,12 @@ struct LottoMachinePurchaseViewMock {
         print("\(count)개를 구매하였습니다.")
     }
     
-    func generateLottoNumber(of tickets: Int) -> [[Int]] {
-        return [[]]
+    var printLottoCallCount: Int = 0
+    private mutating func printLotto(_ lotto: Lotto) {
+        for game in lotto.games {
+            print(game)
+            print("\n")
+            printLottoCallCount += 1
+        }
     }
 }
