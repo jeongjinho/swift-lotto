@@ -7,13 +7,12 @@
 
 import Foundation
 
-
-enum StringAdditionError: Error {
+enum StringAdditionError: LocalizedError {
     case notNumber
     case negativeNumber
 }
 
-extension StringAdditionError: LocalizedError {
+extension StringAdditionError {
     var errorDescription: String? {
         switch self {
         case .notNumber:

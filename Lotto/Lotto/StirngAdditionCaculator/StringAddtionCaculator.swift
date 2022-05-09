@@ -7,10 +7,9 @@
 
 import Foundation
 
-
 final class StringAdditionCaculator {
     
-    let validator: StringAdditionValidator = StringAdditionValidator()
+    private let validator: StringAdditionValidator = StringAdditionValidator()
     
     func caculate(input: String) throws -> Int {
         

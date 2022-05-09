@@ -18,7 +18,7 @@ class StringAdditionCaculatorTests: XCTestCase {
         
         //when && then
         let expectation: StringAdditionError = StringAdditionError.negativeNumber
-        XCTAssertThrowsError(try sut.caculate(input: "-1")) { error in
+        XCTAssertThrowsError(try sut.caculate(input: input)) { error in
             XCTAssertEqual(error as? StringAdditionError, expectation)
         }    
     }
@@ -29,7 +29,7 @@ class StringAdditionCaculatorTests: XCTestCase {
         
         //when && then
         let expectation: StringAdditionError = StringAdditionError.notNumber
-        XCTAssertThrowsError(try sut.caculate(input: "무야호")) { error in
+        XCTAssertThrowsError(try sut.caculate(input: input)) { error in
             XCTAssertEqual(error as? StringAdditionError, expectation)
         }
     }
@@ -45,12 +45,24 @@ class StringAdditionCaculatorTests: XCTestCase {
         XCTAssertEqual(result, expectation)
     }
     
-    func test_given숫자배열_when더하기_then숫자배열을_모두더한_합반환() throws {
+    func test_given숫자문자열_when더하기_then숫자배열을_모두더한_합반환() throws {
         //given
         let input = "1,3,5"
         
         //when
-        let result = try sut.caculate(input: "1,3,5")
+        let result = try sut.caculate(input: input)
+        
+        //then
+        let expectation: Int = 9
+        XCTAssertEqual(result, expectation)
+    }
+    
+    func test_given구분자가_두개들어간문자열_when더하기_then숫자배열을_모두더한_합반환() throws {
+        //given
+        let input = "1,3:5"
+        
+        //when
+        let result = try sut.caculate(input: input)
         
         //then
         let expectation: Int = 9
@@ -73,7 +85,7 @@ class StringAdditionCaculatorTests: XCTestCase {
         let input = "1,3,5"
         
         //when
-        let result = try sut.caculate(input:given)
+        let result = try sut.caculate(input: input)
         
         //then
         let expecation: Int = 9
