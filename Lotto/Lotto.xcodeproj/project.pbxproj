@@ -30,6 +30,8 @@
 		F148299028296BB800687167 /* LottoNumberGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F148298F28296BB800687167 /* LottoNumberGenerator.swift */; };
 		F148299128296BB800687167 /* LottoNumberGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F148298F28296BB800687167 /* LottoNumberGenerator.swift */; };
 		F148299328296EB300687167 /* LottoNumberGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F148299228296EB300687167 /* LottoNumberGeneratorTests.swift */; };
+		F14829952829760800687167 /* Lotto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14829942829760800687167 /* Lotto.swift */; };
+		F14829962829760800687167 /* Lotto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14829942829760800687167 /* Lotto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -64,6 +66,7 @@
 		F142C4A9282810D1001F1CAD /* LottoMachinePurchaseViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoMachinePurchaseViewMock.swift; sourceTree = "<group>"; };
 		F148298F28296BB800687167 /* LottoNumberGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoNumberGenerator.swift; sourceTree = "<group>"; };
 		F148299228296EB300687167 /* LottoNumberGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoNumberGeneratorTests.swift; sourceTree = "<group>"; };
+		F14829942829760800687167 /* Lotto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lotto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +152,7 @@
 				F142C48B28264BAE001F1CAD /* README.md */,
 				F142C48828264B5C001F1CAD /* LottoMachinePurchaseView.swift */,
 				F148298F28296BB800687167 /* LottoNumberGenerator.swift */,
+				F14829942829760800687167 /* Lotto.swift */,
 				F142C4A9282810D1001F1CAD /* LottoMachinePurchaseViewMock.swift */,
 			);
 			path = LottoMachine;
@@ -285,6 +289,7 @@
 				F13CBBCA2822CC1F0056D81B /* StringAdditionError.swift in Sources */,
 				F13CBBC42822C9030056D81B /* StringAdditionValidator.swift in Sources */,
 				F148299028296BB800687167 /* LottoNumberGenerator.swift in Sources */,
+				F14829952829760800687167 /* Lotto.swift in Sources */,
 				F142C48928264B5C001F1CAD /* LottoMachinePurchaseView.swift in Sources */,
 				F142C4AC2829562D001F1CAD /* LottoMachinePurchaseViewMock.swift in Sources */,
 				F13CBBC22822C8E80056D81B /* StringAdditionConverter.swift in Sources */,
@@ -314,6 +319,7 @@
 			files = (
 				F142C498282652F3001F1CAD /* LotoMachineResultTests.swift in Sources */,
 				F148299128296BB800687167 /* LottoNumberGenerator.swift in Sources */,
+				F14829962829760800687167 /* Lotto.swift in Sources */,
 				F142C493282650E4001F1CAD /* LottoMachinePurchaseTests.swift in Sources */,
 				F142C4AB28281215001F1CAD /* LottoMachinePurchaseView.swift in Sources */,
 				F142C4AA282810D1001F1CAD /* LottoMachinePurchaseViewMock.swift in Sources */,
