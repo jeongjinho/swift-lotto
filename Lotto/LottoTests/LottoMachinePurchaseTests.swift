@@ -42,7 +42,6 @@ class LottoMachinePurchaseTests: XCTestCase {
     }
     
     func test_givenAmount5500_then나머지가있어서_에러일으키는지_확인() throws {
-
         let input = "5500"
         var lottoMachine = LottoMachinePurchaseViewMock(input: input)
         
@@ -53,7 +52,7 @@ class LottoMachinePurchaseTests: XCTestCase {
         }
     }
    
-    func test_when로또금액변환성공_whne로또구매_then구매된로또객수프린트함수_카운트1인지_체크() throws {
+    func test_when로또금액변환성공_when로또구매_then구매된로또객수프린트함수_카운트1인지_체크() throws {
         //given
         let input = "5000"
         let printPurchasedLottoCallCount = 1
@@ -65,6 +64,7 @@ class LottoMachinePurchaseTests: XCTestCase {
     }
     
     func test_given생성될로또번호갯수_when로또생성_then생성할로또갯수와_생성된로또갯수비교() {
+        
         
     }
     
