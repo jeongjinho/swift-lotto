@@ -7,8 +7,6 @@
 
 import Foundation
 
-
-
 struct Lotto {
     
     struct Game {
