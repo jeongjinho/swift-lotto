@@ -20,25 +20,50 @@ class LottoMachinePurchaseTests: XCTestCase {
 
     
     func test_given로또번호_when숫자인지체크_then숫자아니라면_에러() {
-        
         //given
         let input = "만원"
-        let lottoMachine = LottoMachinePurchaseView()
-        
+        var lottoMachine = LottoMachinePurchaseViewMock(input: input)
         
         //when && given
-        
-        
+        let expecation = PurchaseError.notNumber
+        XCTAssertThrowsError(try lottoMachine.purchaseLotto()) { error in
+            XCTAssertEqual(error as? PurchaseError, expecation)
+        }
     }
     
-    func test_givenAmount5000_then나머지없이_갯수가_떨어지는지_반환() {
+    func test_givenAmount5000_then나머지없이_갯수가_떨어지는지_반환() throws {
+        let input = "5000"
+        var lottoMachine = LottoMachinePurchaseViewMock(input: input)
         
+        //when && given
+        let result = try lottoMachine.purchaseLotto()
+        let expectation: Int = 5
+        XCTAssertEqual(result, expectation)
     }
     
-    func test_givenAmount5500_then나머지가있어서_에러일으키는지_확인() {
+    func test_givenAmount5500_then나머지가있어서_에러일으키는지_확인() throws {
+
+        let input = "5500"
+        var lottoMachine = LottoMachinePurchaseViewMock(input: input)
         
+        //when && given
+        let expecation = PurchaseError.remainer
+        XCTAssertThrowsError(try lottoMachine.purchaseLotto()) { error in
+            XCTAssertEqual(error as? PurchaseError, expecation)
+        }
     }
    
+    func test_when로또금액변환성공_whne로또구매_then구매된로또객수프린트함수_카운트1인지_체크() throws {
+        //given
+        let input = "5000"
+        let printPurchasedLottoCallCount = 1
+        var lottoMachine = LottoMachinePurchaseViewMock(input: input)
+        //when
+        try lottoMachine.purchaseLotto()
+        //then
+        XCTAssertEqual(lottoMachine.printPurchasedLottoCallCount, printPurchasedLottoCallCount)
+    }
+    
     func test_given생성될로또번호갯수_when로또생성_then생성할로또갯수와_생성된로또갯수비교() {
         
     }

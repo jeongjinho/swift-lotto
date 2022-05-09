@@ -24,6 +24,9 @@
 		F142C48928264B5C001F1CAD /* LottoMachinePurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142C48828264B5C001F1CAD /* LottoMachinePurchaseView.swift */; };
 		F142C493282650E4001F1CAD /* LottoMachinePurchaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142C492282650E4001F1CAD /* LottoMachinePurchaseTests.swift */; };
 		F142C498282652F3001F1CAD /* LotoMachineResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142C497282652F3001F1CAD /* LotoMachineResultTests.swift */; };
+		F142C4AA282810D1001F1CAD /* LottoMachinePurchaseViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142C4A9282810D1001F1CAD /* LottoMachinePurchaseViewMock.swift */; };
+		F142C4AB28281215001F1CAD /* LottoMachinePurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142C48828264B5C001F1CAD /* LottoMachinePurchaseView.swift */; };
+		F142C4AC2829562D001F1CAD /* LottoMachinePurchaseViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142C4A9282810D1001F1CAD /* LottoMachinePurchaseViewMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +58,7 @@
 		F142C490282650E4001F1CAD /* LottoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LottoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F142C492282650E4001F1CAD /* LottoMachinePurchaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoMachinePurchaseTests.swift; sourceTree = "<group>"; };
 		F142C497282652F3001F1CAD /* LotoMachineResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotoMachineResultTests.swift; sourceTree = "<group>"; };
+		F142C4A9282810D1001F1CAD /* LottoMachinePurchaseViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoMachinePurchaseViewMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,7 @@
 			children = (
 				F142C48B28264BAE001F1CAD /* README.md */,
 				F142C48828264B5C001F1CAD /* LottoMachinePurchaseView.swift */,
+				F142C4A9282810D1001F1CAD /* LottoMachinePurchaseViewMock.swift */,
 			);
 			path = LottoMachine;
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 				F13CBBCA2822CC1F0056D81B /* StringAdditionError.swift in Sources */,
 				F13CBBC42822C9030056D81B /* StringAdditionValidator.swift in Sources */,
 				F142C48928264B5C001F1CAD /* LottoMachinePurchaseView.swift in Sources */,
+				F142C4AC2829562D001F1CAD /* LottoMachinePurchaseViewMock.swift in Sources */,
 				F13CBBC22822C8E80056D81B /* StringAdditionConverter.swift in Sources */,
 				F13CBBBB2822C7FA0056D81B /* StringAddtionCaculator.swift in Sources */,
 				F13CBBC82822CBD50056D81B /* StringAdditionPrinter.swift in Sources */,
@@ -300,6 +306,8 @@
 			files = (
 				F142C498282652F3001F1CAD /* LotoMachineResultTests.swift in Sources */,
 				F142C493282650E4001F1CAD /* LottoMachinePurchaseTests.swift in Sources */,
+				F142C4AB28281215001F1CAD /* LottoMachinePurchaseView.swift in Sources */,
+				F142C4AA282810D1001F1CAD /* LottoMachinePurchaseViewMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
