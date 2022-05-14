@@ -9,7 +9,7 @@ import XCTest
 
 class LotoMachineResult: XCTestCase {
     
-    let sut: LottoMachineCheckerView = LottoMachineCheckerView()
+//    let sut: LottoMachineCheckerView = LottoMachineCheckerView(winingNumber: [5,5])
     
     
     func test_given숫자가아닌당첨번호_when숫자로이뤄져있는지체크_then숫자가아니라는에러발생() {

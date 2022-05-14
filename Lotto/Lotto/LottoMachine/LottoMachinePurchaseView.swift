@@ -28,8 +28,7 @@ extension PurchaseError {
 struct LottoMachinePurchaseView {
     private let lottoGenerator: LottoNumberGenerator = LottoNumberGenerator()
     
-    func purchaseLotto() -> Lotto {
-        do {
+    func purchaseLotto() throws -> Lotto {
             guard let input = readLine(), let amount = Int(input) else { throw PurchaseError.notNumber }
             guard amount % 1000 == 0 else { throw PurchaseError.remainer }
             let gameCount = amount / 1000
@@ -37,9 +36,7 @@ struct LottoMachinePurchaseView {
             let lotto = lottoGenerator.generateLotto(of: gameCount)
             printLotto(lotto)
             return lotto
-        } catch let error {
-            print(error.localizedDescription)
-        }
+
     }
     
     private func printPurchasedLotto(of count: Int) {

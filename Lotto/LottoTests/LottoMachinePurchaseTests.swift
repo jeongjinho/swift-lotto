@@ -38,7 +38,7 @@ class LottoMachinePurchaseTests: XCTestCase {
         //when && given
         let result = try lottoMachine.purchaseLotto()
         let expectation: Int = 5
-        XCTAssertEqual(result, expectation)
+        XCTAssertEqual(result.games.count, expectation)
     }
     
     func test_givenAmount5500_then나머지가있어서_에러일으키는지_확인() throws {
@@ -69,17 +69,6 @@ class LottoMachinePurchaseTests: XCTestCase {
     }
     
     func test_given생성된로또가_when로또번호생성_then로또번호가_오름차순인지_확인() {
-        
-        
-    }
-    
-    func test_given지난주로또번호_when1_between_45체크_then범위안에_있어야함() {
-        
-        
-    }
-    
-    
-    func test_given지난주로또번호_when로또번호중복체크_then중복있으면_에러() {
         
         
     }

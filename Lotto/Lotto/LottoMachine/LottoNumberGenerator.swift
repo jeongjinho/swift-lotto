@@ -29,6 +29,8 @@ final class LottoNumberGenerator {
             let randomNumber = Int.random(in: Option.range)
             numbers.insert(randomNumber)
         }
-        return Lotto.Game.init(numbers: Array(numbers.sorted(by: <)))
+        let number = numbers.map{Lotto.Game.CandidateNumber(number: $0)}
+        
+        return Lotto.Game.init(numbers: number)
     }
 }
